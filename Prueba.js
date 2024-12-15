@@ -1,6 +1,7 @@
 const rl = require("readline-sync");
 console.log("Bienvenido a nuestra AGENDA personal ");
 let lista = ["Marta", "Pepe"];
+let telefono = [626677764, 666572765];
 let value1 = true;
 while (value1) {
   let accion = rl.question(
