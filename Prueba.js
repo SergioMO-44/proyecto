@@ -11,7 +11,7 @@ while (value1) {
     //for (let i = 0; i < lista.length; i++) {
     //console.log(lista);
     //console.log("Tu agenda de contactos es: " + lista[i] + ".");
-    console.log(lista);
+    console.log(lista, telefono);
   }
   if (accion == "anadir") {
     let anadir = rl.question("Anadir contacto ");
