@@ -38,3 +38,10 @@ router.post("/rutaPOSTconbody", (req, res) => {
   console.log(req.body);
   res.send("informacion recibida");
 });
+router.post("/holaPOST", (req, res) => {
+  req.body = "cosas del request";
+  console.log(req.body);
+  res.json({
+    saludo: "hola desde un JSON",
+  });
+});
