@@ -30,3 +30,7 @@ router.post("/rutaPOST", (req, res) => {
   console.log("Alguien ha accedido a mi ruta post");
   res.send("hola haciendo mis pruebas de inicio a la ruta post");
 });
+router.post("/rutaPOST12", (req, res) => {
+  console.log("Alguien ha accedido a mi ruta post");
+  res.send("hola haciendo mis pruebas de inicio a la ruta post12");
+});
