@@ -26,3 +26,7 @@ router.get("/rutaGetconJSON", (req, res) => {
     Title: "hola mundo con express probando cosas para subir a github",
   });
 });
+router.post("/rutaPOST", (req, res) => {
+  console.log("Alguien ha accedido a mi ruta post");
+  res.send("hola haciendo mis pruebas de inicio a la ruta post");
+});

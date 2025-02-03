@@ -1,7 +1,12 @@
 const express = require("express");
 const app = express();
+const morgan = require("morgan");
 
 app.set("port", process.env.PORT || 8080);
+
+app.use(morgan("dev"));
+app.use(express.urlencoded({ extend: false }));
+
 app.listen(app.set("port"), leerPuerto());
 //app.get("/rutaGet", function (req, res) {
 // console.log("hola en la consola de node, desde una llamada en el servidor");
