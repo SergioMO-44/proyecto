@@ -45,3 +45,10 @@ router.post("/holaPOST", (req, res) => {
     saludo: "hola desde un JSON",
   });
 });
+router.post("/holaPOST12", (req, res) => {
+  req.body = "nuevas cosas del request";
+  console.log(req.body);
+  res.json({
+    despedida: "hasta luego desde un JSON",
+  });
+});
