@@ -28,7 +28,20 @@ router.get("/rutaGetconJSON", (req, res) => {
 });
 router.post("/rutaPOST", (req, res) => {
   console.log("Alguien ha accedido a mi ruta post");
-  res.send("hola haciendo mis pruebas de inicio a la ruta post");
+  console.log(req.body);
+  console.log(req.body.nombre);
+  console.log(req.body.apellido);
+  console.log(req.body.fechahora);
+  console.log(req.body.correo);
+  console.log(req.body.telefono);
+  res.json({
+    id: "001",
+    nombre: req.body.nombre,
+    apellido: req.body.apellido,
+    Fecha: req.body.fechahora,
+  });
+  //res.send("hola haciendo mis pruebas de inicio a la ruta post");
+  res.redirect("http://127.0.0.1:5500/src/routes/index1.html");
 });
 router.post("/rutaPOST12", (req, res) => {
   console.log("Alguien ha accedido a mi ruta post");
